@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cambridge-Isanti Soccer Club</title>
+<title>Coaches | Cambridge-Isanti Soccer Club</title>
 <meta name="description" content="Cambridge-Isanti Soccer Club — recreational and competitive youth soccer in Cambridge & Isanti, Minnesota.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -159,6 +159,50 @@
     .brand .txt{display:none}
   }
 
+  /* ---- REC PAGE ---- */
+  .page-hero{background:linear-gradient(160deg,var(--blue),var(--navy));color:#fff;padding:60px 0 56px;position:relative;overflow:hidden}
+  .page-hero .wrap{position:relative;z-index:2}
+  .page-hero .eyebrow{color:#cdd9f5}.page-hero .eyebrow::before{background:var(--sky)}
+  .page-hero h1{font-size:clamp(38px,6vw,72px);color:#fff}
+  .page-hero p{max-width:600px;margin:18px 0 26px;font-size:17px;color:rgba(255,255,255,.85)}
+  .page-hero .cta-primary{background:#fff;color:var(--navy);box-shadow:0 5px 0 rgba(0,0,0,.25)}
+  .page-hero .cta-primary:hover{transform:translateY(-2px)}
+  .crumbs{font-size:13px;color:rgba(255,255,255,.7);margin-bottom:14px;letter-spacing:.3px}
+  .crumbs a{color:rgba(255,255,255,.7)}.crumbs a:hover{color:#fff}
+  .fact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .fact{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+  .fact .k{font-family:'Anton',sans-serif;color:var(--blue);font-size:13px;letter-spacing:.6px;text-transform:uppercase}
+  .fact .v{margin-top:7px;font-size:17px;font-weight:700;color:var(--navy)}
+  .fact .s{color:var(--muted);font-size:13.5px;margin-top:3px}
+  .price-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:760px}
+  .price{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;text-align:center}
+  .price h3{font-size:20px;color:var(--navy)}
+  .price .amt{font-family:'Anton',sans-serif;font-size:52px;color:var(--blue);line-height:1;margin:8px 0 2px}
+  .price .eb{color:var(--pitch);font-weight:700;font-size:15px}
+  .price .was{color:var(--muted);font-size:14px}
+  .price .reg{color:var(--muted);font-size:14px;margin-top:6px}
+  .band{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px}
+  .tbl{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .tbl th{background:var(--navy);color:#fff;text-align:left;padding:12px 14px;font-size:12.5px;letter-spacing:.5px;text-transform:uppercase}
+  .tbl td{padding:11px 14px;border-top:1px solid var(--line);font-size:14.5px;color:var(--ink)}
+  .tbl tr:nth-child(even) td{background:#fafbfe}
+  .tbl td:first-child{font-weight:700;color:var(--navy)}
+  .note{background:#fff7ed;border:1px solid #fed7aa;border-left:4px solid var(--orange);border-radius:12px;padding:18px 20px;color:#7c3a12;font-size:15px}
+  .note strong{color:var(--orange)}
+  .checks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 28px}
+  .checks li{padding-left:26px;position:relative;font-size:15px;color:var(--ink)}
+  .checks li::before{content:"\2713";position:absolute;left:0;top:0;color:var(--blue);font-weight:800}
+  .rules{list-style:none;display:grid;gap:9px}
+  .rules li{padding-left:26px;position:relative;font-size:15px;color:var(--ink)}
+  .rules li::before{content:"";position:absolute;left:2px;top:8px;width:8px;height:8px;border-radius:50%;background:var(--sky)}
+  .linklist{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .linklist a{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px 16px;font-weight:600;color:var(--navy)}
+  .linklist a:hover{border-color:var(--blue);transform:translateY(-2px)}
+  .callout{background:linear-gradient(160deg,var(--blue),var(--navy));color:#fff;border-radius:20px;padding:32px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+  .callout h3{font-size:26px;color:#fff}
+  .callout p{color:rgba(255,255,255,.85);margin-top:6px;max-width:520px}
+  @media(max-width:860px){.fact-grid{grid-template-columns:1fr 1fr}.price-grid{grid-template-columns:1fr}.checks{grid-template-columns:1fr}.linklist{grid-template-columns:1fr}}
+
   /* ---------- DROPDOWN NAV ---------- */
   .nav-item{position:relative;display:flex;align-items:center}
   .nav-btn{font-family:inherit;background:none;border:0;cursor:pointer;font-weight:600;font-size:14.5px;color:var(--ink);padding:4px 0;display:inline-flex;align-items:center;gap:5px;transition:color .2s}
@@ -248,119 +292,49 @@
   </div>
 </header>
 
-<section class="hero" id="top">
-  <div class="pitch-lines"><div class="circle"></div><div class="hline"></div></div>
+<section class="page-hero">
   <div class="wrap">
-      <span class="eyebrow reveal d1">Cambridge · Isanti · Minnesota</span>
-      <h1 class="reveal d2">Where the<br>game <span class="o">grows.</span></h1>
-      <p class="lead reveal d3">Recreational and competitive youth soccer for every age and ability. We build skill, sportsmanship, and a love of the game in a positive, community-driven environment.</p>
-      <div class="hero-cta reveal d4">
-        <a class="cta cta-primary" href="https://playmetrics.com/login">Register for the Season →</a>
-        <a class="cta cta-ghost" href="rec.html">Explore Programs</a>
-      </div>
-      <div class="hero-stats reveal d5">
-        <div class="stat"><div class="n">24</div><div class="l">Rec Teams</div></div>
-        <div class="stat"><div class="n">195+</div><div class="l">Players</div></div>
-        <div class="stat"><div class="n">U4–U19</div><div class="l">Age Divisions</div></div>
-      </div>
+    <div class="crumbs"><a href="index.html">Home</a> / About Us / Coaches</div>
+    <span class="eyebrow">For Our Coaches</span>
+    <h1>Coach<br>Resources.</h1>
+    <p>Everything our volunteer coaches need: training resources and the annual requirements that keep our players safe.</p>
   </div>
 </section>
 
-<section class="block" id="about">
-  <div class="wrap about-grid">
-    <div class="sec-head" style="margin-bottom:0">
-      <span class="eyebrow">Our Club</span>
-      <h2>More than a season.</h2>
-      <p>The Cambridge-Isanti Soccer Club is committed to providing the opportunity for children to play soccer in a positive environment — while engaging parents and the community to take an active role in developing our young people.</p>
-      <p style="margin-top:14px">Our purpose is to promote, foster, and perpetuate the game of soccer at the youth level, with fun and enjoyable programs suitable for all ages at both the recreational and competitive level.</p>
-    </div>
-    <div class="about-card">
-      <h3>What we stand for</h3>
-      <p>Every player, every family, every volunteer makes CISC what it is. We grow the game by growing people first.</p>
-      <div class="values"><span>Development</span><span>Sportsmanship</span><span>Community</span><span>Fun</span><span>Skill</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="block" id="programs" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+<section class="block" style="background:#fff;border-bottom:1px solid var(--line)">
   <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Soccer Programs</span>
-      <h2>Find your pathway.</h2>
-      <p>From first kicks to competitive travel, there's a place for every player at CISC.</p>
-    </div>
-    <div class="prog-grid">
-      <a class="prog" href="rec.html"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7l3 2-1 4h-4l-1-4z"/></svg></div><h3>Rec Soccer</h3><p>Our flagship recreational league — accessible, fun, and skill-building for every age and ability.</p><span class="more">Learn more →</span></a>
-      <a class="prog" href="competition.html"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6 21V8l6-4 6 4v13"/><path d="M9 21v-6h6v6"/></svg></div><h3>Competition Soccer</h3><p>Travel and tournament play for players ready to take their game to the next level.</p><span class="more">Learn more →</span></a>
-      <a class="prog" href="futsal.html"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg></div><h3>Futsal / Winter Training</h3><p>Keep developing through the off-season with indoor futsal and winter skills training.</p><span class="more">Learn more →</span></a>
-      <a class="prog" href="summer-camp.html"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 21V7l7-4 7 4v14"/><circle cx="12" cy="11" r="2"/></svg></div><h3>Summer Camp</h3><p>Skill-packed summer sessions that keep players active, learning, and having fun all season.</p><span class="more">Learn more →</span></a>
-      <a class="prog" href="fall-rec.html"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><h3>Fall Rec</h3><p>Extend the season into autumn with our fall recreational program for returning and new players.</p><span class="more">Learn more →</span></a>
-      <a class="prog" href="referees.html"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg></div><h3>Referees</h3><p>Become a CISC referee. Earn while you learn and give back to the game and the community.</p><span class="more">Sign up →</span></a>
-      <a class="prog" href="scholarships.html"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-4.5-7-10a7 7 0 0114 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg></div><h3>Scholarships</h3><p>Cost should never keep a child off the field. Financial assistance is available — just ask.</p><span class="more">Apply →</span></a>
-      <a class="prog" href="https://playmetrics.com/login" style="background:var(--blue);color:#fff;border-color:transparent"><div class="ic" style="background:var(--sky)"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div><h3 style="color:#fff">Register Now</h3><p style="color:rgba(255,255,255,.85)">Ready to play? Create your account and register for the upcoming season.</p><span class="more" style="color:#fff">Go to PlayMetrics →</span></a>
+    <div class="sec-head"><span class="eyebrow">Coaching Resources</span><h2>Tools &amp; materials.</h2></div>
+    <div class="linklist">
+      <a href="https://drive.google.com/drive/folders/1MfXAR5VfPVHQTsGCHt8yi11SMuyUuSnd?usp=drive_link" target="_blank" rel="noopener">Rec Coaching Resources &rarr;</a>
+      <a href="https://drive.google.com/drive/folders/1m1qF7t9tB8vniRj3SbkdXkUQVUt2D_Pn?usp=drive_link" target="_blank" rel="noopener">Competition Coach Resources &rarr;</a>
     </div>
   </div>
 </section>
 
-<section class="block trophy" id="champions">
+<section class="block">
   <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Trophy Case</span>
-      <h2>Recent honors.</h2>
-      <p>A few highlights from our competitive squads. Hard work on the training pitch shows up on game day.</p>
+    <div class="sec-head"><span class="eyebrow">Adult Participation Requirements</span><h2>Required before you start.</h2><p>Every adult must complete these risk-management requirements before any sanctioned activity. They keep our players safe, and we appreciate your help in getting them done.</p></div>
+    <div class="band">
+      <ul class="rules">
+        <li><strong>Approved MYSA background check.</strong> Required by Minnesota State Law and MYSA policy before participating in any MYSA activity.</li>
+        <li><strong>SafeSport training.</strong> Valid for one year. First-year coaches complete the full 90-minute training; returning coaches complete the 30-minute refresher.</li>
+        <li><strong>Concussion training.</strong> The CDC HEADS UP course, valid for three years.</li>
+      </ul>
     </div>
-    <div class="trophy-row">
-      <div class="tcard"><div class="yr">'25</div><div class="ti">St. Croix Cup — 2nd Place</div></div>
-      <div class="tcard"><div class="yr">'24</div><div class="ti">North East United Summer Classic — Runner-up</div></div>
-      <div class="tcard"><div class="yr">'24</div><div class="ti">Boys U12 Summer State Champions</div></div>
-      <div class="tcard"><div class="yr">'23</div><div class="ti">U18/U19 North United Tournament Champions</div></div>
-      <div class="tcard"><div class="yr">'22</div><div class="ti">U18/U19 Rush Soccer Tournament Champions</div></div>
-      <div class="tcard"><div class="yr">'22</div><div class="ti">U14 Albertville Friendly Days Champions</div></div>
+    <div class="note" style="margin-top:18px">Upon completing SafeSport and concussion training, your certificate must be in your MYSA account for the club to validate. If your name and email match between MYSA and the training portal, it updates automatically; otherwise upload it manually under your account's Transcript or Certificates tab.</div>
+    <div class="linklist" style="margin-top:18px">
+      <a href="https://www.mnyouthsoccer.org/player-safety/" target="_blank" rel="noopener">MYSA Player Safety: Links &amp; Instructions &rarr;</a>
+      <a href="policies.html">Club Policies &rarr;</a>
     </div>
   </div>
 </section>
-
-<section class="block" id="sponsors">
+<section class="block" style="background:#fff;border-top:1px solid var(--line)">
   <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Community Partners</span>
-      <h2>Powered by our sponsors.</h2>
-      <p>Local businesses keep CISC affordable and growing. We're grateful for every partner who invests in our players.</p>
-    </div>
-    <div class="sponsor-grid">
-      <a class="sp-logo" href="https://embracemn.com/" target="_blank" rel="noopener" title="Embrace Orthodontics"><img src="images/sponsors/embrace-ortho.png" alt="Embrace Orthodontics" loading="lazy"></a>
-      <a class="sp-logo" href="https://www.fleetfarm.com/" target="_blank" rel="noopener" title="Fleet Farm"><img src="images/sponsors/fleet-farm.png" alt="Fleet Farm" loading="lazy"></a>
-      <a class="sp-logo" href="https://www.icsportsmensclub.org/" target="_blank" rel="noopener" title="Isanti County Sportsmen's Club"><img src="images/sponsors/isanti-sportsmens.png" alt="Isanti County Sportsmen's Club" loading="lazy"></a>
-      <a class="sp-logo" href="https://kwiktrip.com/" target="_blank" rel="noopener" title="Kwik Trip"><img src="images/sponsors/kwik-trip.png" alt="Kwik Trip" loading="lazy"></a>
-      <a class="sp-logo" href="https://www.membersccu.com/" target="_blank" rel="noopener" title="Members Cooperative Credit Union"><img src="images/sponsors/members-ccu.png" alt="Members Cooperative Credit Union" loading="lazy"></a>
-      <a class="sp-logo" href="https://midco.com/" target="_blank" rel="noopener" title="Midco Foundation"><img src="images/sponsors/midco.png" alt="Midco Foundation" loading="lazy"></a>
-      <a class="sp-logo" href="https://nationalguard.com/minnesota" target="_blank" rel="noopener" title="MN Army National Guard"><img src="images/sponsors/mn-national-guard.png" alt="MN Army National Guard" loading="lazy"></a>
-      <a class="sp-logo" href="https://themosquitomilitiallc.com/" target="_blank" rel="noopener" title="The Mosquito Militia"><img src="images/sponsors/mosquito-militia.png" alt="The Mosquito Militia" loading="lazy"></a>
-      <a class="sp-logo" href="https://www.newtonfinancialsolutions.com/" target="_blank" rel="noopener" title="Newton Financial Solutions"><img src="images/sponsors/newton-financial.png" alt="Newton Financial Solutions" loading="lazy"></a>
-      <a class="sp-logo" href="https://prismdesignemb.com/" target="_blank" rel="noopener" title="Prism Design &amp; Embroidery"><img src="images/sponsors/prism.png" alt="Prism Design &amp; Embroidery" loading="lazy"></a>
-      <a class="sp-logo" href="https://www.boettcherseptic.com/" target="_blank" rel="noopener" title="Boettcher Excavating &amp; Septic"><img src="images/sponsors/boettcher.png" alt="Boettcher Excavating &amp; Septic" loading="lazy"></a>
-      <a class="sp-logo" href="https://www.century21moline.com/" target="_blank" rel="noopener" title="Century 21 Moline Realty"><img src="images/sponsors/c21-moline.png" alt="Century 21 Moline Realty" loading="lazy"></a>
-      <a class="sp-logo" href="https://e-clubhouse.org/sites/cambridgemn/" target="_blank" rel="noopener" title="Cambridge Lions Club"><img src="images/sponsors/cambridge-lions.png" alt="Cambridge Lions Club" loading="lazy"></a>
-      <a class="sp-logo" href="https://www.caseys.com/" target="_blank" rel="noopener" title="Casey's"><img src="images/sponsors/caseys.png" alt="Casey's" loading="lazy"></a>
-      <a class="sp-logo" href="https://www.citycentermarket.coop/" target="_blank" rel="noopener" title="City Center Market"><img src="images/sponsors/city-center-market.png" alt="City Center Market" loading="lazy"></a>
-      <a class="sp-logo" href="https://www.connexusenergy.com/" target="_blank" rel="noopener" title="Connexus Energy"><img src="images/sponsors/connexus.png" alt="Connexus Energy" loading="lazy"></a>
-      <a class="sp-logo" href="https://dwcompanies.com/" target="_blank" rel="noopener" title="Dirt Works"><img src="images/sponsors/dirt-works.png" alt="Dirt Works" loading="lazy"></a>
-      <a class="sp-logo" href="https://www.scheels.com/" target="_blank" rel="noopener" title="Scheels"><img src="images/sponsors/scheels.png" alt="Scheels" loading="lazy"></a>
-      <a class="sp-logo" href="https://shootingstars.pro/" target="_blank" rel="noopener" title="Shooting Stars Photography"><img src="images/sponsors/shooting-stars.png" alt="Shooting Stars Photography" loading="lazy"></a>
-      <a class="sp-logo" href="https://www.mycambridgedentist.com/" target="_blank" rel="noopener" title="South Main Dental"><img src="images/sponsors/south-main-dental.png" alt="South Main Dental" loading="lazy"></a>
-      <a class="sp-logo" href="https://www.stonemountainpetlodge.com/" target="_blank" rel="noopener" title="Stone Mountain Pet Lodge"><img src="images/sponsors/stone-mountain.png" alt="Stone Mountain Pet Lodge" loading="lazy"></a>
-      <a class="sp-logo" href="https://www.target.com/" target="_blank" rel="noopener" title="Target"><img src="images/sponsors/target.png" alt="Target" loading="lazy"></a>
-      <a class="sp-logo" href="https://www.isantivfw.com/home/" target="_blank" rel="noopener" title="Rum River Isanti VFW Post 2735"><img src="images/sponsors/vfw-isanti.png" alt="Rum River Isanti VFW Post 2735" loading="lazy"></a>
-      <a class="sp-logo" href="https://www.security-banks.com/" target="_blank" rel="noopener" title="Security Bank &amp; Trust Co."><img src="images/sponsors/security-bank.png" alt="Security Bank &amp; Trust Co." loading="lazy"></a>
-      <a class="sp-logo" href="https://jctbowl.com/" target="_blank" rel="noopener" title="Junction Bowl"><img src="images/sponsors/junction-bowl.png" alt="Junction Bowl" loading="lazy"></a>
-      <a class="sp-logo" href="https://www.minnco.com/" target="_blank" rel="noopener" title="Minnco Credit Union"><img src="images/sponsors/minnco.png" alt="Minnco Credit Union" loading="lazy"></a>
-      <a class="sp-logo sp-logo--dark" href="https://www.golfgrandynine.com/course" target="_blank" rel="noopener" title="Grandy Nine Golf"><img src="images/sponsors/grandy-nine.png" alt="Grandy Nine Golf" loading="lazy"></a>
-      <a class="sp-logo sp-logo--dark" href="https://www.anytimefitness.com/gyms/1/cambridge-mn-55008/" target="_blank" rel="noopener" title="Anytime Fitness"><img src="images/sponsors/anytime-fitness.png" alt="Anytime Fitness" loading="lazy"></a>
-      <a class="sp-logo sp-logo--dark" href="https://larsonsystems.com/" target="_blank" rel="noopener" title="Larson Systems"><img src="images/sponsors/larson-systems.png" alt="Larson Systems" loading="lazy"></a>
-    </div>
+    <div class="sec-head" style="margin-bottom:16px"><span class="eyebrow">Our Sponsors</span><h2 style="font-size:26px">Proudly supported by.</h2></div>
+    <div class="sp-strip" id="spStrip"></div>
+    <div style="text-align:center;margin-top:18px"><a href="index.html#sponsors" style="font-weight:700;color:var(--blue)">See all our sponsors &rarr;</a></div>
   </div>
 </section>
-
 <footer id="contact">
   <div class="wrap">
     <div class="foot-grid">
@@ -397,5 +371,6 @@
   </div>
 </footer>
 
+<script>(function(){var S=[{"n": "Embrace Orthodontics", "u": "https://embracemn.com/", "f": "embrace-ortho.png", "d": 0}, {"n": "Fleet Farm", "u": "https://www.fleetfarm.com/", "f": "fleet-farm.png", "d": 0}, {"n": "Isanti County Sportsmen's Club", "u": "https://www.icsportsmensclub.org/", "f": "isanti-sportsmens.png", "d": 0}, {"n": "Kwik Trip", "u": "https://kwiktrip.com/", "f": "kwik-trip.png", "d": 0}, {"n": "Members Cooperative Credit Union", "u": "https://www.membersccu.com/", "f": "members-ccu.png", "d": 0}, {"n": "Midco Foundation", "u": "https://midco.com/", "f": "midco.png", "d": 0}, {"n": "MN Army National Guard", "u": "https://nationalguard.com/minnesota", "f": "mn-national-guard.png", "d": 0}, {"n": "The Mosquito Militia", "u": "https://themosquitomilitiallc.com/", "f": "mosquito-militia.png", "d": 0}, {"n": "Newton Financial Solutions", "u": "https://www.newtonfinancialsolutions.com/", "f": "newton-financial.png", "d": 0}, {"n": "Prism Design & Embroidery", "u": "https://prismdesignemb.com/", "f": "prism.png", "d": 0}, {"n": "Boettcher Excavating & Septic", "u": "https://www.boettcherseptic.com/", "f": "boettcher.png", "d": 0}, {"n": "Century 21 Moline Realty", "u": "https://www.century21moline.com/", "f": "c21-moline.png", "d": 0}, {"n": "Cambridge Lions Club", "u": "https://e-clubhouse.org/sites/cambridgemn/", "f": "cambridge-lions.png", "d": 0}, {"n": "Casey's", "u": "https://www.caseys.com/", "f": "caseys.png", "d": 0}, {"n": "City Center Market", "u": "https://www.citycentermarket.coop/", "f": "city-center-market.png", "d": 0}, {"n": "Connexus Energy", "u": "https://www.connexusenergy.com/", "f": "connexus.png", "d": 0}, {"n": "Dirt Works", "u": "https://dwcompanies.com/", "f": "dirt-works.png", "d": 0}, {"n": "Scheels", "u": "https://www.scheels.com/", "f": "scheels.png", "d": 0}, {"n": "Shooting Stars Photography", "u": "https://shootingstars.pro/", "f": "shooting-stars.png", "d": 0}, {"n": "South Main Dental", "u": "https://www.mycambridgedentist.com/", "f": "south-main-dental.png", "d": 0}, {"n": "Stone Mountain Pet Lodge", "u": "https://www.stonemountainpetlodge.com/", "f": "stone-mountain.png", "d": 0}, {"n": "Target", "u": "https://www.target.com/", "f": "target.png", "d": 0}, {"n": "Rum River Isanti VFW Post 2735", "u": "https://www.isantivfw.com/home/", "f": "vfw-isanti.png", "d": 0}, {"n": "Security Bank & Trust Co.", "u": "https://www.security-banks.com/", "f": "security-bank.png", "d": 0}, {"n": "Junction Bowl", "u": "https://jctbowl.com/", "f": "junction-bowl.png", "d": 0}, {"n": "Minnco Credit Union", "u": "https://www.minnco.com/", "f": "minnco.png", "d": 0}, {"n": "Grandy Nine Golf", "u": "https://www.golfgrandynine.com/course", "f": "grandy-nine.png", "d": 1}, {"n": "Anytime Fitness", "u": "https://www.anytimefitness.com/gyms/1/cambridge-mn-55008/", "f": "anytime-fitness.png", "d": 1}, {"n": "Larson Systems", "u": "https://larsonsystems.com/", "f": "larson-systems.png", "d": 1}];var el=document.getElementById("spStrip");if(!el)return;for(var i=S.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=S[i];S[i]=S[j];S[j]=t;}var k=5+Math.floor(Math.random()*3);var p=S.slice(0,Math.min(k,S.length));el.innerHTML=p.map(function(s){return '<a class="sp-logo'+(s.d?" sp-logo--dark":"")+'" href="'+s.u+'" target="_blank" rel="noopener" title="'+s.n+'"><img src="images/sponsors/'+s.f+'" alt="'+s.n+'" loading="lazy"></a>';}).join("");})();</script>
 </body>
 </html>

@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Referees | Cambridge-Isanti Soccer Club</title>
 <meta name="description" content="Cambridge-Isanti Soccer Club — recreational and competitive youth soccer in Cambridge & Isanti, Minnesota.">
@@ -219,6 +218,13 @@
   .mobile-nav.open{display:flex}
   .mobile-nav .m-group{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:.5px;color:var(--blue);padding:14px 0 2px}
   .mobile-nav a.sub{padding-left:14px}
+
+  /* ---------- SPONSOR LOGOS ---------- */
+  .sponsor-grid,.sp-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+  .sp-logo{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;align-items:center;justify-content:center;min-height:92px;transition:border-color .2s,transform .2s}
+  .sp-logo:hover{border-color:var(--blue);transform:translateY(-2px)}
+  .sp-logo--dark{background:#1e3263;border-color:#1e3263}
+  .sp-logo img{max-width:100%;max-height:64px;width:auto;height:auto;display:block}
 </style>
 </head>
 <body>
@@ -324,6 +330,13 @@
     </div>
   </div>
 </section>
+<section class="block" style="background:#fff;border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:16px"><span class="eyebrow">Our Sponsors</span><h2 style="font-size:26px">Proudly supported by.</h2></div>
+    <div class="sp-strip" id="spStrip"></div>
+    <div style="text-align:center;margin-top:18px"><a href="index.html#sponsors" style="font-weight:700;color:var(--blue)">See all our sponsors &rarr;</a></div>
+  </div>
+</section>
 <footer id="contact">
   <div class="wrap">
     <div class="foot-grid">
@@ -360,5 +373,6 @@
   </div>
 </footer>
 
+<script>(function(){var S=[{"n": "Embrace Orthodontics", "u": "https://embracemn.com/", "f": "embrace-ortho.png", "d": 0}, {"n": "Fleet Farm", "u": "https://www.fleetfarm.com/", "f": "fleet-farm.png", "d": 0}, {"n": "Isanti County Sportsmen's Club", "u": "https://www.icsportsmensclub.org/", "f": "isanti-sportsmens.png", "d": 0}, {"n": "Kwik Trip", "u": "https://kwiktrip.com/", "f": "kwik-trip.png", "d": 0}, {"n": "Members Cooperative Credit Union", "u": "https://www.membersccu.com/", "f": "members-ccu.png", "d": 0}, {"n": "Midco Foundation", "u": "https://midco.com/", "f": "midco.png", "d": 0}, {"n": "MN Army National Guard", "u": "https://nationalguard.com/minnesota", "f": "mn-national-guard.png", "d": 0}, {"n": "The Mosquito Militia", "u": "https://themosquitomilitiallc.com/", "f": "mosquito-militia.png", "d": 0}, {"n": "Newton Financial Solutions", "u": "https://www.newtonfinancialsolutions.com/", "f": "newton-financial.png", "d": 0}, {"n": "Prism Design & Embroidery", "u": "https://prismdesignemb.com/", "f": "prism.png", "d": 0}, {"n": "Boettcher Excavating & Septic", "u": "https://www.boettcherseptic.com/", "f": "boettcher.png", "d": 0}, {"n": "Century 21 Moline Realty", "u": "https://www.century21moline.com/", "f": "c21-moline.png", "d": 0}, {"n": "Cambridge Lions Club", "u": "https://e-clubhouse.org/sites/cambridgemn/", "f": "cambridge-lions.png", "d": 0}, {"n": "Casey's", "u": "https://www.caseys.com/", "f": "caseys.png", "d": 0}, {"n": "City Center Market", "u": "https://www.citycentermarket.coop/", "f": "city-center-market.png", "d": 0}, {"n": "Connexus Energy", "u": "https://www.connexusenergy.com/", "f": "connexus.png", "d": 0}, {"n": "Dirt Works", "u": "https://dwcompanies.com/", "f": "dirt-works.png", "d": 0}, {"n": "Scheels", "u": "https://www.scheels.com/", "f": "scheels.png", "d": 0}, {"n": "Shooting Stars Photography", "u": "https://shootingstars.pro/", "f": "shooting-stars.png", "d": 0}, {"n": "South Main Dental", "u": "https://www.mycambridgedentist.com/", "f": "south-main-dental.png", "d": 0}, {"n": "Stone Mountain Pet Lodge", "u": "https://www.stonemountainpetlodge.com/", "f": "stone-mountain.png", "d": 0}, {"n": "Target", "u": "https://www.target.com/", "f": "target.png", "d": 0}, {"n": "Rum River Isanti VFW Post 2735", "u": "https://www.isantivfw.com/home/", "f": "vfw-isanti.png", "d": 0}, {"n": "Security Bank & Trust Co.", "u": "https://www.security-banks.com/", "f": "security-bank.png", "d": 0}, {"n": "Junction Bowl", "u": "https://jctbowl.com/", "f": "junction-bowl.png", "d": 0}, {"n": "Minnco Credit Union", "u": "https://www.minnco.com/", "f": "minnco.png", "d": 0}, {"n": "Grandy Nine Golf", "u": "https://www.golfgrandynine.com/course", "f": "grandy-nine.png", "d": 1}, {"n": "Anytime Fitness", "u": "https://www.anytimefitness.com/gyms/1/cambridge-mn-55008/", "f": "anytime-fitness.png", "d": 1}, {"n": "Larson Systems", "u": "https://larsonsystems.com/", "f": "larson-systems.png", "d": 1}];var el=document.getElementById("spStrip");if(!el)return;for(var i=S.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=S[i];S[i]=S[j];S[j]=t;}var k=5+Math.floor(Math.random()*3);var p=S.slice(0,Math.min(k,S.length));el.innerHTML=p.map(function(s){return '<a class="sp-logo'+(s.d?" sp-logo--dark":"")+'" href="'+s.u+'" target="_blank" rel="noopener" title="'+s.n+'"><img src="images/sponsors/'+s.f+'" alt="'+s.n+'" loading="lazy"></a>';}).join("");})();</script>
 </body>
 </html>
